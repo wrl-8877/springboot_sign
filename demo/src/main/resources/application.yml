@@ -1,0 +1,16 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+api:
+  hmac:
+    enabled: true
+    urlPatterns: /api/*
+    headerName: X-Sign
+  decrypt:
+    enabled: true
+    url-patterns: /api/*
+  encrypt:
+    enabled: true
+    url-patterns: /api/*
